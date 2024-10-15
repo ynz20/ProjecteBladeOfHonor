@@ -1,4 +1,4 @@
-# Estil bàsic amb Tailwind
+# Responsivitat amb Tailwind
 
 ## Objectiu:
 
