@@ -56,7 +56,6 @@ I una instantània dels diferents resultats de breakpoints:
 ![Model](/assets/completa_mitjana.png)
 ![Model](/assets/completa_gran.png)
 
-
 Si vols pots substituir el contingut d'index.html pel contingut de l'exercici.html per veure com es comporta en diferents mides de pantalla.
 
 ### Exercici 2
@@ -65,5 +64,4 @@ Agafa el teu Portfoli (potser és millor que facis un altre projecte) i aplica T
 
 ## Entrega
 
-Puja els 2 projecte a alguna de les plataformes que hem vist fins ara (Vercel, Netlify, GitHub Pages) i comparteix el link al full compartit del drive. 
-
+Puja els 2 projecte a alguna de les plataformes que hem vist fins ara (Vercel, Netlify, GitHub Pages) i comparteix el link al full compartit del drive.
