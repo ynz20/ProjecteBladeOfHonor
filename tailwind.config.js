@@ -12,7 +12,6 @@ module.exports = {
         serif: ['EB Garamond', 'serif'],
       },
     },
-
   },
   plugins: [],
 };
