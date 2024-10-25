@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+body {
+    font-family: "EB Garamond", serif;
+}
+
+.rotate-text {
+    display: inline-block; /* Permite aplicar transformaciones */
+    transform: rotate(90deg); /* Rota el texto 180 grados */
+}
