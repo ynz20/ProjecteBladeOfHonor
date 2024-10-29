@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white-japan font-serif">
+    <nav class="bg-black-japan text-white-japan py-4 flex justify-between items-center">
+      <button id="menuButton" class="text-white-japan ml-4 md:hidden focus:outline-none">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+
+      <div class="text-5xl text-red-japan mx-auto md:ml-20">Blade of Honor</div>
+
+      <div class="hidden menu md:flex space-x-20 text-lg mr-20">
+        <a href="#" class="hover:text-red-japan font-bold text-2xl">Home</a>
+        <a href="#" class="hover:text-red-japan text-2xl">Dojo</a>
+        <a href="#" class="hover:text-red-japan text-2xl">About Us</a>
+        <a href="#" class="hover:text-red-japan text-2xl">Charity Work</a>
+        <a href="#" class="hover:text-red-japan text-2xl">Log Out</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden flex flex-col items-start space-y-4 md:hidden bg-black-japan text-white-japan p-4">
+      <a href="#" class="hover:text-red-japan font-bold text-xl">Home</a>
+      <a href="#" class="hover:text-red-japan text-xl">Dojo</a>
+      <a href="#" class="hover:text-red-japan text-xl">About Us</a>
+      <a href="#" class="hover:text-red-japan text-xl">Charity Work</a>
+      <a href="#" class="hover:text-red-japan text-xl">Log Out</a>
+    </div>
+
+    <div class="bg-black-japan pt-10 mt-20 mx-10 flex flex-col items-center">
+      <h1 class="text-white-japan text-center text-5xl mb-4">
+        Where Tradition Meets Precision
+      </h1>
+      <img
+        src="../public/img/letrasjpn.png"
+        alt="Letras japonesas"
+        class="hidden md:block absolute left-0 w-[100px] ml-24 lg:w-[110px]"
+      />
+      <div class="flex items-center justify-center mt-4 w-full relative">
+        <img
+          src="../public/img/katanahome.png"
+          alt="Katana de página principal"
+          class="w-3/4 md:w-1/2 mx-auto"
+        />
+      </div>
+    </div>
+
+    <div class="pt-10 mx-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <h3 class="text-red-japan text-4xl mt-2 text-center">Real Katanas</h3>
+          <img
+            src="../public/img/katana1.png"
+            alt="Descripción de la imagen 1"
+            class="w-full h-48 sm:h-64 object-cover lg:pb-4"
+          />
+        </div>
+
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <h3 class="text-red-japan text-4xl mt-2 text-center">Designed Katanas</h3>
+          <img
+            src="../public/img/katana2.png"
+            alt="Descripción de la imagen 2"
+            class="w-full h-48 sm:h-64 object-cover lg:pb-4"
+          />
+        </div>
+
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+          <h3 class="text-red-japan text-4xl mt-2 text-center">Model Katanas</h3>
+          <img
+            src="../public/img/katana3.png"
+            alt="Descripción de la imagen 3"
+            class="w-full h-48 sm:h-64 object-cover pb-4 lg:pb-4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
