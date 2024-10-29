@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 body {
-  font-family: "EB Garamond", serif;
+    font-family: "EB Garamond", serif;
+}
+
+.rotate-text {
+    display: inline-block; /* Permite aplicar transformaciones */
+    transform: rotate(90deg); /* Rota el texto 180 grados */
 }
