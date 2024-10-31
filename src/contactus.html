@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white-japan font-serif">
+    <nav class="bg-black text-white-japan py-4 flex justify-between items-center">
+        <button id="menuButton" class="text-white-japan ml-4 md:hidden focus:outline-none">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <div class="text-5xl text-red-japan mx-auto md:ml-20">Blade of Honor</div>
+
+        <div class="hidden menu md:flex space-x-20 text-lg mr-20">
+            <a href="./home.html" class="hover:text-red-japan text-2xl">Home</a>
+            <a href="./dojo.html" class="hover:text-red-japan font-bold text-2xl">Dojo</a>
+            <a href="#" class="hover:text-red-japan text-2xl">About Us</a>
+            <a href="#" class="hover:text-red-japan text-2xl">Charity Work</a>
+            <a href="./login.html" class="hover:text-red-japan text-2xl">Log Out</a>
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="hidden flex flex-col items-start space-y-4 md:hidden bg-black-japan text-white-japan p-4">
+        <a href="#" class="hover:text-red-japan font-bold text-xl">Home</a>
+        <a href="./dojo.html" class="hover:text-red-japan text-xl">Dojo</a>
+        <a href="#" class="hover:text-red-japan text-xl">About Us</a>
+        <a href="#" class="hover:text-red-japan text-xl">Charity Work</a>
+        <a href="./login.html" class="hover:text-red-japan text-xl">Log Out</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+        <div class="flex flex-col items-start text-center text-2xl text-black-japan p-4">
+            <p>Made By</p>
+            <h1>Luis Ruiz Lorite</h1>
+            <h1>luis.ruizi@cirvianum.cat</h1>
+            <img src="../assets/LineaVermella.png" class="my-2">
+            <h1>Yasser Zuaki</h1>
+            <h1>yasser.zuaki@cirvianum.cat</h1>
+            <h1> +81-3-1234-5678</h1>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="../assets/lletresjapos2.png" class="w-auto h-auto max-w-xs"> <!-- Ajustar el tamaño si es necesario -->
+        </div>
+        <div class="flex justify-end items-end">
+            <img src="../assets/samuraiContactUs.png" class="w-32 md:w-48"> <!-- Tamaño ajustable -->
+        </div>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
