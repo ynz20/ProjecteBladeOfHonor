@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black font-serif">
+    <nav
+      class="bg-black text-white-japan py-4 flex justify-between items-center"
+    >
+      <button
+        id="menuButton"
+        class="text-white-japan ml-4 md:hidden focus:outline-none"
+      >
+        <svg
+          class="w-8 h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <div class="text-5xl text-red-japan mx-auto md:ml-20">Blade of Honor</div>
+
+      <div class="hidden menu md:flex space-x-20 text-lg mr-20">
+        <a href="./home.html" class="hover:text-red-japan text-2xl">Home</a>
+        <a href="#" class="hover:text-red-japan font-bold text-2xl">Dojo</a>
+        <a href="#" class="hover:text-red-japan text-2xl">About Us</a>
+        <a href="#" class="hover:text-red-japan text-2xl">Charity Work</a>
+        <a href="./login.html" class="hover:text-red-japan text-2xl">Log Out</a>
+      </div>
+    </nav>
+
+    <div
+      id="mobileMenu"
+      class="hidden flex flex-col items-start space-y-4 md:hidden bg-black-japan text-white-japan p-4"
+    >
+      <a href="#" class="hover:text-red-japan font-bold text-xl">Home</a>
+      <a href="#" class="hover:text-red-japan text-xl">Dojo</a>
+      <a href="#" class="hover:text-red-japan text-xl">About Us</a>
+      <a href="#" class="hover:text-red-japan text-xl">Charity Work</a>
+      <a href="./login.html" class="hover:text-red-japan text-xl">Log Out</a>
+    </div>
+
+    <div class="bg-white-japan mt-20 mx-28 mx-auto max-w-[1300px] flex flex-row items-center">
+        <h1
+          class="text-black-japan text-center text-8xl ml-10 font-bold max-w-[800px]"
+        >
+          Victory is <span class="text-red-japan font-bold text-8xl">WON</span> before the
+          battle <span class="text-red-japan font-bold text-8xl">BEGINS</span>
+        </h1>
+        <img
+          src="../public/img/samurai.png"
+          alt="Letras japonesas"
+          class="hidden md:block w-[300px] h-auto ml-auto"
+        />
+      </div>
+      
+    </div>
+
+    <div class="bg-black-japan mt-14 mx-28 mx-auto max-w-[1300px] flex flex-row items-center">
+      <p class="text-white-japan text-left text-3xl max-w-[680px] ml-10 ">A dojo is a training space for martial arts like karate 
+        and judo, focusing on both physical practice 
+        and personal growth</p>
+        <img
+          src="../public/img/dojo.png"
+          alt="Dojo japones"
+          class="hidden md:block w-[400px] h-auto ml-auto"
+        />
+    </div>
+
+    <div class="bg-black-japan mt-8 mx-28 mx-auto max-w-[1300px] flex flex-row items-center">
+      <img
+      src="../public/img/dojotraing.png"
+      alt="Dojo japones"
+      class="hidden md:block w-[400px] h-auto"
+    />
+      <p class="text-white-japan text-left text-3xl max-w-[680px] ml-10 ">Sharpen your <span class="text-red-japan">skills</span>, master the <span class="text-red-japan">blade</span>
+        The dojo awaits your <span class="text-red-japan">strength</span>.</p>
+    </div>
+
+    <div class="bg-black-japan mt-8 mx-28 mx-auto max-w-[1300px] flex flex-row items-center">
+      <p class="text-white-japan text-left text-3xl max-w-[680px] ml-10 ">Train your <span class="text-red-japan">mind</span>, conquer your <span class="text-red-japan">thoughts</span>
+        Find your path in the dojo.</p>
+        <img
+          src="../public/img/samurais.png"
+          alt="Dojo japones"
+          class="hidden md:block w-[400px] h-auto ml-auto"
+        />
+    </div>
+
+    <div class="flex justify-center items-center mt-20 mb-10">
+      <button class="bg-red-japan text-center font-bold text-white-japan px-8 py-4 text-2xl">
+        JOIN TODAY
+      </button>
+    </div>
+    
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
