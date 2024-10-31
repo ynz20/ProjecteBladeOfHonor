@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0">
+  <!-- Eliminar márgenes y rellenos -->
+  <nav class="bg-black text-white py-4 flex justify-between items-center">
+    <button id="menuButton" class="text-white ml-4 md:hidden focus:outline-none">
+      <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+
+    <div class="text-5xl text-red-japan mx-auto md:ml-20">Blade of Honor</div>
+
+    <div class="hidden menu md:flex space-x-20 text-lg mr-20">
+      <a href="./home.html" class="hover:text-red-japan text-2xl">Home</a>
+      <a href="./dojo.html" class="hover:text-red-japan font-bold text-2xl">Dojo</a>
+      <a href="#" class="hover:text-red-japan text-2xl">About Us</a>
+      <a href="./charityworkpage.html" class="hover:text-red-japan text-2xl">Charity Work</a>
+      <a href="./login.html" class="hover:text-red-japan text-2xl">Log Out</a>
+    </div>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div id="mobileMenu" class="hidden flex flex-col items-start space-y-4 md:hidden bg-black text-white p-4">
+    <a href="#" class="hover:text-red-japan font-bold text-xl">Home</a>
+    <a href="./dojo.html" class="hover:text-red-japan text-xl">Dojo</a>
+    <a href="#" class="hover:text-red-japan text-xl">About Us</a>
+    <a href="./charityworkpage.html" class="hover:text-red-japan text-xl">Charity Work</a>
+    <a href="./login.html" class="hover:text-red-japan text-xl">Log Out</a>
+  </div>
+
+  <div class="bg-[url('../public/img/fondo.png')] bg-cover bg-no-repeat h-screen flex items-center">
+    <div class="flex gap-40 items-start w-full px-40"> <!-- Contenedor para h1 y formulario -->
+      <h1 class="text-7xl text-white shadow-lg max-w-[800px] font-bold">
+        <span class="text-red-japan">30%</span> of each katana sale will support
+        reforestation efforts in Japan's
+        <span class="text-red-japan">Chichibu Tama Kai</span> National Park
+      </h1>
+
+      <div class="bg-black-japan p-8 text-center text-white-japan max-w-xs w-full shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Enter amount</h2>
+
+        <!-- Input for custom amount -->
+        <div class="flex items-center bg-white rounded-md mb-6 p-2">
+          <select class="text-black text-xl font-bold bg-transparent focus:outline-none">
+            <option value="€">€</option>
+            <option value="$">$</option>
+            <option value="£">£</option>
+          </select>
+          <input
+            type="number"
+            placeholder="25"
+            class="flex-1 bg-transparent text-black text-xl ml-2 placeholder-black focus:outline-none"
+          />
+        </div>
+
+        <!-- Quick amount selection buttons -->
+        <div class="grid grid-cols-3 gap-2 mb-6">
+          <button class=" bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">5€</button>
+          <button class=" bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">25€</button>
+          <button class= "bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">50€</button>
+          <button class= "bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">100€</button>
+          <button class= "bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">150€</button>
+          <button class= "bg-white-japan text-red-japan font-bold py-2 text-2xl rounded-md">200€</button>
+        </div>
+
+        <!-- Monthly donation checkbox -->
+        <div class="flex items-center justify-center mb-6">
+          <input
+            type="checkbox"
+            id="monthly"
+            class="form-checkbox text-red-japan bg-gray-100 border-gray-400 rounded focus:ring-red-500"
+          />
+          <label for="monthly" class="ml-2 text-white-japan text-sm">Make this donation monthly</label>
+        </div>
+
+        <!-- Donate button -->
+        <button class="bg-red-japan w-full py-3 text-white-japan font-bold hover:bg-red-800">
+          DONATE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
