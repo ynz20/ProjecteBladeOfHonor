@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-white-japan flex flex-row-reverse">
-    <div class="bg-black-japan flex justify-center items-center h-screen w-2/5">
+<body class="bg-white-japan flex items-center justify-center h-screen">
+    <div class="bg-black-japan lg:flex hidden justify-center items-center h-screen w-2/5">
         <img src="../assets/LLetresJapoLogin.png" class="w-full max-w-[1920px] sm:w-2/5 h-auto">
     </div>
-    <div class="flex justify-center items-center h-screen w-2/3">
-        <form action="" class="w-1/3">
+
+    <div class="flex justify-center items-center h-screen w-full lg:w-2/3">
+        <form action="" class="w-full max-w-sm lg:w-1/3 px-4">
             <h1 class="text-red-japan text-6xl mb-10 text-shadow font-bold text-center">SIGN UP</h1>
             <div class="mb-4 flex items-center">
                 <i class="fa-solid fa-user text-red-japan text-2xl mr-4"></i>
@@ -28,11 +29,11 @@
             </div>
             <div class="mb-4 flex items-center">
                 <i class="fa-solid fa-lock text-red-japan text-2xl mr-4"></i>
-                <input class="bg-black-japan text-white-japan flex-1 p-3 placeholder-white-japan" type="text" placeholder="Password">
+                <input class="bg-black-japan text-white-japan flex-1 p-3 placeholder-white-japan" type="password" placeholder="Password">
             </div>
             <div class="mb-4 flex items-center">
                 <i class="fa-solid fa-lock text-red-japan text-2xl mr-4"></i>
-                <input class="bg-black-japan text-white-japan flex-1 p-3 placeholder-white-japan" type="text" placeholder="Confirm Password">
+                <input class="bg-black-japan text-white-japan flex-1 p-3 placeholder-white-japan" type="password" placeholder="Confirm Password">
             </div>
             <div class="flex items-center pl-9 mb-4">
                 <button type="button" class="bg-red-japan w-full text-white px-12 py-2 rounded hover:bg-red-700">Sign Up</button>
@@ -54,6 +55,7 @@
             </div>
         </form>
     </div>
-    <img src="../assets/SamuraiLogIn.png" class="absolute bottom-0 left-2/3 transform -translate-x-2/3 z-10 w-full max-w-[1920px] sm:w-1/4 h-auto">
+
+    <img src="../assets/SamuraiLogIn.png" class="absolute bottom-0 left-1/3 transform -translate-x-1/3 z-10 w-full max-w-[1920px] sm:w-1/4 h-auto hidden lg:block">
 </body>
 </html>
