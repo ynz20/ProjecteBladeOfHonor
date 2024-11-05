@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: "dist", // Directori de sortida per al build
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "./index.html"), // Pàgina principal
+        main: path.resolve(__dirname, "index.html"), // Pàgina principal
         login: path.resolve(__dirname, "src/login.html"),
         charity: path.resolve(__dirname, "src/charityworkpage.html"),
         contactus: path.resolve(__dirname, "src/contactus.html"),
