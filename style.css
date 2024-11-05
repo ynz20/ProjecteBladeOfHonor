@@ -16,3 +16,10 @@ body {
     display: inline-block; /* Permite aplicar transformaciones */
     transform: rotate(90deg); /* Rota el texto 180 grados */
 }
+
+
+  @media (min-width: 768px) {
+    .wave {
+        clip-path: ellipse(80% 100% at 100% 50%);
+    }
+  }
