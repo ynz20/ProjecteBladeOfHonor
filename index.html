@@ -1,38 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <style>
-        @keyframes fall {
-            0% {
-                transform: translateY(-200px) rotate(-360deg);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-            }
+      @keyframes fall {
+        0% {
+          transform: translateY(-200px) rotate(-360deg);
+          opacity: 0;
         }
-        
-        .falling-katana {
-            animation: fall 2s ease-out forwards;
+        100% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
         }
+      }
+
+      .falling-katana {
+        animation: fall 2s ease-out forwards;
+      }
     </style>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-[url('../public/img/fondoinici.jpeg')] bg-cover">
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen bg-fondoinici bg-cover"
+  >
     <div class="flex flex-col items-center">
-        <img src="./public/img/pngwing.com.png" alt="Katana" class="w-80 h-auto falling-katana mb-8" />
-        <div class="flex space-x-4">
-            <a href="./src/login.html" class="px-6 py-3 bg-red-japan text-white rounded-lg shadow-md text-xl hover:bg-red-600 transition duration-300">
-                Login
-            </a>
-            <a href="./src/signup.html" class="px-6 py-3 bg-red-japan text-white rounded-lg shadow-md text-xl hover:bg-red-600 transition duration-300">
-                Signup
-            </a>
-        </div>
+      <img
+        src="./public/img/pngwing.com.png"
+        alt="Katana"
+        class="w-80 h-auto falling-katana mb-8"
+      />
+      <div class="flex space-x-4">
+        <a
+          href="./src/login.html"
+          class="px-6 py-3 bg-red-japan text-white rounded-lg shadow-md text-xl hover:bg-red-600 transition duration-300"
+        >
+          Login
+        </a>
+        <a
+          href="./src/signup.html"
+          class="px-6 py-3 bg-red-japan text-white rounded-lg shadow-md text-xl hover:bg-red-600 transition duration-300"
+        >
+          Signup
+        </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
